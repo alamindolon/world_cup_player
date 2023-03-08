@@ -4,9 +4,205 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+
     <title>World Cup</title>
 </head>
 <body>
-    <p>this is </p>
+    <header>
+        <div class="bg-cyan-300">
+
+            
+            <img class="object-cover h-96 w-full" src="images/cover.png">
+            
+          </div>
+    </header>
+
+    <section class="container mx-auto p-4">
+        <div class="grid grid-flow-row-dense grid-cols-4 grid-rows-3 gap-4 mt-4">
+            <!-- <div class="col-span-2">01</div> -->
+            <div>
+              <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="images/Essam.png" alt="Shoes" class="rounded-xl h-40 w-80" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Essam</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary buyNow" onclick="buyNowbtn(this)">Buy Now</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+              <!-- <div class="col-span-2">02</div> -->
+            <div class="" >
+              <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="images/jazzar.png" alt="Shoes" class="rounded-xl h-40 w-80" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Jazzar</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary buyNow" onclick="buyNowbtn(this)">Buy Now</button>
+                  </div>
+                </div>
+              </div></div>
+              <!-- <div class="col-span-2">03</div> -->
+            <div>
+              <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="images/kalamanik.png" alt="Shoes" class="rounded-xl h-40 w-80" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">kalamanik</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary buyNow" onclick="buyNowbtn(this)">Buy Now</button>
+                  </div>
+                </div>
+              </div></div>
+              <!-- <div class="col-span-2">04</div> -->
+            <div>
+              <h2 class="text-center text-5xl m-4">Slected - V</h2>
+              <div class="overflow-x-auto">
+                <table class="table w-full">
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Name</th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody id="playerList">
+                    <!-- row 1 -->
+
+                    <!-- <tr>
+                      <th>1</th>
+                      <td>Cy Ganderton</td>
+                      
+                    </tr> -->
+                    
+                  </tbody>
+                </table>
+              </div>
+
+
+            </div>
+
+            <!-- <div class="col-span-2">05</div> -->
+            <div><div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="images/mbappi.png" alt="Shoes" class="rounded-xl h-40 w-80" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Mbappi</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions">
+                    <button id="button1" class="btn btn-primary buyNow" onclick="buyNowbtn(this,'button1')">Buy Now</button>
+                  </div>
+                </div>
+              </div></div>
+
+              <!-- <div class="col-span-2">06</div> -->
+
+            <div><div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="images/mesi.png" alt="Shoes" class="rounded-xl h-40 w-80" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Mesi</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions">
+                    <button id="button2" class="btn btn-primary buyNow" onclick="buyNowbtn(this,'button2')">Buy Now</button>
+                  </div>
+                </div>
+              </div></div>
+
+            <!-- <div class="col-span-2">07</div> -->
+
+            <div><div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="images/neimar.png" alt="Shoes" class="rounded-xl h-40 w-80" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Neimar</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary buyNow" onclick="buyNowbtn(this)">Buy Now</button>
+                  </div>
+                </div>
+              </div></div>
+              <!-- <div class="col-span-2">08</div> -->
+            <div class="row-span-2 ">
+              <h3 class="text-center text-5xl mb-6 text-teal-500">Budget</h3>
+              Per Player: <input type="number" name="" id="" class="border">
+              <div class="card-actions flex justify-center m-5">
+                <button class="btn btn-primary">Calculate</button>
+              </div>
+              
+              <p class="text-2xl">player Expenses : $ <span>5000</span></p>
+              Manager: <input type="number" name="" id="" class="border m-5">
+              Coach: <input type="number" name="" id="" class="border m-3">
+              <div class="card-actions flex justify-center m-5">
+                <button class="btn btn-primary"> Total Calculate</button>
+              </div>
+              <p class="text-2xl text-center">Total : $ <span>5000</span></p>
+                
+            </div>
+            <!-- <div class="col-span-2">09</div> -->
+            <div><div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="images/soccer.png" alt="Shoes" class="rounded-xl h-40 w-80" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Soccer</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary buyNow" onclick="buyNowbtn(this)">Buy Now</button>
+                  </div>
+                </div>
+              </div></div>
+
+              <!-- <div class="col-span-2">10</div> -->
+
+            <div><div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="images/cover.png" alt="Shoes" class="rounded-xl h-40 w-80" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Team</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary buyNow" onclick="buyNowbtn(this)">Buy Now</button>
+                  </div>
+                </div>
+              </div></div>
+
+              <!-- <div class="col-span-2">11</div> -->
+
+            <div><div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="images/jazzar.png"  alt="Shoes" class="rounded-xl h-40 w-80" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Pagol</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary buyNow" onclick="buyNowbtn(this)">Buy Now</button>
+                  </div>
+                </div>
+              </div></div>
+              <!-- <div class="col-span-2">12</div> -->
+            
+        </div>
+    </section>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
