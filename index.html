@@ -32,7 +32,7 @@
                   <h2 class="card-title">Essam</h2>
                   <p>If a dog chews shoes whose shoes does he choose?</p>
                   <div class="card-actions">
-                    <button class="btn btn-primary buyNow" onclick="buyNowbtn(this)">Buy Now</button>
+                    <button id="button1" class="btn btn-primary buyNow" onclick="buyNowbtn(this,'button1')">Buy Now</button>
                   </div>
                 </div>
                 
@@ -48,7 +48,7 @@
                   <h2 class="card-title">Jazzar</h2>
                   <p>If a dog chews shoes whose shoes does he choose?</p>
                   <div class="card-actions">
-                    <button class="btn btn-primary buyNow" onclick="buyNowbtn(this)">Buy Now</button>
+                    <button id="button2" class="btn btn-primary buyNow" onclick="buyNowbtn(this,'button2')">Buy Now</button>
                   </div>
                 </div>
               </div></div>
@@ -62,7 +62,7 @@
                   <h2 class="card-title">kalamanik</h2>
                   <p>If a dog chews shoes whose shoes does he choose?</p>
                   <div class="card-actions">
-                    <button class="btn btn-primary buyNow" onclick="buyNowbtn(this)">Buy Now</button>
+                    <button id="button3" class="btn btn-primary buyNow" onclick="buyNowbtn(this,'button3')">Buy Now</button>
                   </div>
                 </div>
               </div></div>
@@ -104,7 +104,7 @@
                   <h2 class="card-title">Mbappi</h2>
                   <p>If a dog chews shoes whose shoes does he choose?</p>
                   <div class="card-actions">
-                    <button id="button1" class="btn btn-primary buyNow" onclick="buyNowbtn(this,'button1')">Buy Now</button>
+                    <button id="button5" class="btn btn-primary buyNow" onclick="buyNowbtn(this,'button5')">Buy Now</button>
                   </div>
                 </div>
               </div></div>
@@ -119,7 +119,7 @@
                   <h2 class="card-title">Mesi</h2>
                   <p>If a dog chews shoes whose shoes does he choose?</p>
                   <div class="card-actions">
-                    <button id="button2" class="btn btn-primary buyNow" onclick="buyNowbtn(this,'button2')">Buy Now</button>
+                    <button id="button6" class="btn btn-primary buyNow" onclick="buyNowbtn(this,'button6')">Buy Now</button>
                   </div>
                 </div>
               </div></div>
@@ -134,25 +134,26 @@
                   <h2 class="card-title">Neimar</h2>
                   <p>If a dog chews shoes whose shoes does he choose?</p>
                   <div class="card-actions">
-                    <button class="btn btn-primary buyNow" onclick="buyNowbtn(this)">Buy Now</button>
+                    <button id="button7" class="btn btn-primary buyNow" onclick="buyNowbtn(this,'button7')">Buy Now</button>
                   </div>
                 </div>
               </div></div>
               <!-- <div class="col-span-2">08</div> -->
             <div class="row-span-2 ">
               <h3 class="text-center text-5xl mb-6 text-teal-500">Budget</h3>
-              Per Player: <input type="number" name="" id="" class="border">
+              Per Player: <input type="number" name="" id="per_player_input" class="border">
               <div class="card-actions flex justify-center m-5">
-                <button class="btn btn-primary">Calculate</button>
+                <button class="btn btn-primary" id="calculator_btn">Calculate</button>
               </div>
               
-              <p class="text-2xl">player Expenses : $ <span>5000</span></p>
-              Manager: <input type="number" name="" id="" class="border m-5">
-              Coach: <input type="number" name="" id="" class="border m-3">
+    
+              <p class="text-2xl">player Expenses : $ <span id="player_expen">0000</span></p>
+              Manager: <input type="number" name="" id="manager_input" class="border m-5">
+              Coach: <input type="number" name="" id="coach_input" class="border m-3">
               <div class="card-actions flex justify-center m-5">
-                <button class="btn btn-primary"> Total Calculate</button>
+                <button class="btn btn-primary" id="total_cal_btn"> Total Calculate</button>
               </div>
-              <p class="text-2xl text-center">Total : $ <span>5000</span></p>
+              <p class="text-2xl text-center">Total : $ <span id="total_display">0000</span></p>
                 
             </div>
             <!-- <div class="col-span-2">09</div> -->
@@ -164,7 +165,7 @@
                   <h2 class="card-title">Soccer</h2>
                   <p>If a dog chews shoes whose shoes does he choose?</p>
                   <div class="card-actions">
-                    <button class="btn btn-primary buyNow" onclick="buyNowbtn(this)">Buy Now</button>
+                    <button id="button8" class="btn btn-primary buyNow" onclick="buyNowbtn(this,'button8')">Buy Now</button>
                   </div>
                 </div>
               </div></div>
@@ -179,7 +180,7 @@
                   <h2 class="card-title">Team</h2>
                   <p>If a dog chews shoes whose shoes does he choose?</p>
                   <div class="card-actions">
-                    <button class="btn btn-primary buyNow" onclick="buyNowbtn(this)">Buy Now</button>
+                    <button id="button9" class="btn btn-primary buyNow" onclick="buyNowbtn(this,'button9')">Buy Now</button>
                   </div>
                 </div>
               </div></div>
@@ -194,7 +195,7 @@
                   <h2 class="card-title">Pagol</h2>
                   <p>If a dog chews shoes whose shoes does he choose?</p>
                   <div class="card-actions">
-                    <button class="btn btn-primary buyNow" onclick="buyNowbtn(this)">Buy Now</button>
+                    <button id="button19" class="btn btn-primary buyNow" onclick="buyNowbtn(this,'button19')">Buy Now</button>
                   </div>
                 </div>
               </div></div>
@@ -202,6 +203,16 @@
             
         </div>
     </section>
+    <!-- <section>
+
+      <button id="button1" class="btn btn-primary buyNow" onclick="buyNowbtn(this)">Buy Now</button>
+
+      <button id="button2" class="btn btn-primary buyNow" onclick="buyNowbtn(this)">Buy Now</button>
+
+      <button id="button3" class="btn btn-primary buyNow" onclick="buyNowbtn(this)">Buy Now</button>
+      <button id="button4" class="btn btn-primary buyNow" onclick="buyNowbtn(this)">Buy Now</button>
+      <button id="button5" class="btn btn-primary buyNow" onclick="buyNowbtn(this)">Buy Now</button>
+    </section> -->
 
     <script src="js/index.js"></script>
 </body>
